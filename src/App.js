@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+
+function Simplecounter(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bigCounter">
+      <div className="calendar">
+        
+      </div>
+      <div className="clock_four">{props.digitfour % 10}</div>
+      <div className="clock_three">{props.digitthree % 10}</div>
+      <div className="clock_two">{props.digittwo % 10}</div>
+      <div className="clock_one">{props.digitone % 10}</div>
     </div>
+
+
   );
 }
 
-export default App;
+export default Simplecounter;
